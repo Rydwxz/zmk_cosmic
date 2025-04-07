@@ -10,7 +10,7 @@
 
 #define DEFAULT  0
 #define NUMS 1
-#define FUN  2
+#define NAV  2
 
 / {
     behaviors {
@@ -35,28 +35,28 @@
 
         default_layer {
             bindings = <
-    &kp ESC   &kp Q     &kp W    &kp E     &kp R       &kp T      &kp Y     &kp U        &kp I     &kp O     &kp P    &kp BSPC
-    &kp TAB   &kp A     &kp S    &kp D     &kp F       &kp G      &kp H     &kp J        &kp K     &kp L     &kp SEMI &kp SQT
-    &kp LSHFT &kp Z     &kp X    &kp C     &kp V       &kp B      &kp N     &kp M        &csq      &pdq      &kp FSLH &kp ENTER
-    &kp LCTRL &kp BSLH  &kp LALT &kp LGUI  &mo NUMS    &kp SPACE  &trans    &kp LSHFT    &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT
+    &kp ESC   &kp Q     &kp W    &kp E    &kp R    &kp T      &kp Y     &kp U        &kp I     &kp O     &kp P    &kp BSPC
+    &kp TAB   &kp A     &kp S    &kp D    &kp F    &kp G      &kp H     &kp J        &kp K     &kp L     &kp SEMI &kp SQT
+    &kp LSHFT &kp Z     &kp X    &kp C    &kp V    &kp B      &kp N     &kp M        &csq      &pdq      &kp FSLH &kp ENTER
+    &kp LCTRL &kp BSLH  &kp LALT &kp LGUI &mo NUMS &kp SPACE  &trans    &kp LSHFT    &mo NAV   &kp LALT  &kp F23  &kp F24
             >;
         };
 
         nums {
             bindings = <
-   &kp ESC   &kp GRAVE &kp TILDE &kp N3   &kp N4      &kp N5     &kp N6    &kp N7      &kp MINUS &kp EQUAL &kp BSLH &kp DEL
+    &kp ESC   &kp GRAVE &kp TILDE &trans  &trans      &trans     &trans    &trans      &kp MINUS &kp EQUAL &kp BSLH &kp DEL
     &kp TAB   &kp N1    &kp N2   &kp N3   &kp N4      &kp N0     &kp N9    &kp N5      &kp N6    &kp N7    &kp N8   &kp BSLH
-    &kp LSHFT &kp LBRC  &kp LPAR &kp LT   &kp LBKT    &kp F11    &kp F12   &kp RBKT    &kp GT    &kp RPAR  &kp RBRC &kp ENTER
-    &kp LCTRL &kp LGUI  &kp LALT &trans   &to DEFAULT &kp SPACE  &trans    &kp LSHFT   &kp HOME  &kp PG_UP &kp PG_DN &kp END
+    &kp LSHFT &kp LBRC  &kp LPAR &kp LT   &kp LBKT    &trans     &trans    &kp RBKT    &kp GT    &kp RPAR  &kp RBRC &kp ENTER
+    &kp LCTRL &kp LGUI  &kp LALT &trans   &to DEFAULT &kp SPACE  &trans    &kp LSHFT   &kp HOME  &kp PG_UP &kp PG_DN&kp END
             >;
         };
 
-        fun {
+        nav {
             bindings = <
-    &trans  &trans  &trans  &trans  &trans  &trans  &trans    &kp F1    &kp F2     &kp F3     &kp F4     &trans
-    &trans  &trans  &trans  &trans  &trans  &trans  &trans    &kp F5    &kp F6     &kp F7     &kp F8    &bt BT_PRV
-    &trans  &trans  &trans  &trans  &trans  &trans  &trans    &kp F9    &kp F10    &kp F11    &kp F12   &bt BT_NXT
-    &trans  &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR
+    &trans  &kp F1  &kp F2  &kp F3  &kp F4  &trans  &trans    &trans    &trans     &trans     &trans    &trans
+    &trans  &kp F5  &kp F6  &kp F7  &kp F8  &trans  &trans    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT &trans
+    &trans  &kp F9  &kp F10 &kp F11 &kp F12 &trans  &trans    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END   &trans
+    &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &to DEFAULT&trans     &trans    &trans
             >;
         };
     };
