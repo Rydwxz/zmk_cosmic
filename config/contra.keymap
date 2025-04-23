@@ -70,7 +70,7 @@
 
         grk {
             bindings = <
-    &trans  &da_aa     &el_omega  &el_epsilon&el_rho    &el_theta  &el_upsilon&el_tau    &el_iota   &el_omicron&el_pi    &trans
+    &trans  &da_aa     &el_omega  &el_epsilon&el_rho    &el_theta  &el_upsilon&el_tau    &el_iota   &el_omikron&el_pi    &trans
     &trans  &el_alpha  &el_sigma  &el_delta  &el_phi    &el_gamma  &el_eta    &de_eszett &el_kappa  &el_lambda &trans    &trans
  &to DEFAULT&el_zeta   &el_xi     &el_chi    &el_psi    &el_beta   &el_nu     &el_mu     &trans     &trans     &trans    &trans
     &trans  &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans    &trans
