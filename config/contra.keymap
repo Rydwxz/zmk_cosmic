@@ -22,20 +22,20 @@
 
 / {
     behaviors {
-        // csq: comma_squote {
-        //      compatible = "zmk,behavior-mod-morph";
-        //      label = "COMMA_SQUOTE";
-        //      #binding-cells = <0>;
-        //      bindings = <&kp COMMA>, <&kp SQT>;
-        //      mods = <(MOD_LSFT)>;
-        //      };
-        // pdq: period_dquote {
-        //      compatible = "zmk,behavior-mod-morph";
-        //      label = "PERIOD_DQUOTE";
-        //      #binding-cells = <0>;
-        //      bindings = <&kp DOT>, <&kp DQT>;
-        //      mods = <(MOD_LSFT)>;
-        //      };
+        csq: comma_squote {
+             compatible = "zmk,behavior-mod-morph";
+             label = "COMMA_SQUOTE";
+             #binding-cells = <0>;
+             bindings = <&kp COMMA>, <&kp SQT>;
+             mods = <(MOD_LSFT)>;
+             };
+        pdq: period_dquote {
+             compatible = "zmk,behavior-mod-morph";
+             label = "PERIOD_DQUOTE";
+             #binding-cells = <0>;
+             bindings = <&kp DOT>, <&kp DQT>;
+             mods = <(MOD_LSFT)>;
+             };
         arrow: arrow {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
