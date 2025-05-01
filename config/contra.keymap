@@ -82,7 +82,7 @@
 
         num {
             bindings = <
-    &kp ESC   &kp GRAVE &kp TILDE&hasbang &trans      &trans     &trans    &trans      &kp MINUS &kp EQUAL &kp BSLH &kp DEL
+    &kp ESC   &kp GRAVE &kp TILDE&hashbang&trans      &trans     &trans    &trans      &kp MINUS &kp EQUAL &kp BSLH &kp DEL
     &kp TAB   &kp N1    &kp N2   &kp N3   &kp N4      &kp N0     &kp N9    &kp N5      &kp N6    &kp N7    &kp N8   &kp BSLH
     &kp LSHFT &kp LBRC  &kp LPAR &kp LT   &kp LBKT    &arrow     &trans    &kp RBKT    &kp GT    &kp RPAR  &kp RBRC &kp ENTER
     &kp LCTRL &kp LGUI  &kp LALT &trans   &to DEFAULT &kp SPACE  &trans    &kp LSHFT   &kp HOME  &kp PG_UP &kp PG_DN&kp END
